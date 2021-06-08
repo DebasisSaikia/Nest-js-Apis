@@ -4,8 +4,10 @@ import { Controller, Get, Put } from '@nestjs/common';
 export class StudentTeacherController {
   @Get()
   getStudents() {
-    return 'get Teacher by Id';
+    return 'get all Students that belong to a teacher';
   }
   @Put('/:studentId')
-  updateStudentTeacher() {}
+  updateStudentTeacher() {
+    return 'Update student teacher';
+  }
 }
